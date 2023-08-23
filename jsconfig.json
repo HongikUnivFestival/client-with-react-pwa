@@ -3,9 +3,13 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "target": "ES2020",
-    "jsx": "react",
+    "jsx": "react",  
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "baseUrl": "src"
-  }
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
 }
